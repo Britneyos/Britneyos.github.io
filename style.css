@@ -12,9 +12,14 @@ body {
 /* navigation menu */
 nav {
     background: rgb(175, 141, 77);
-   margin: 0 auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border: 2px;
+    border-radius: 20px;
+    
+    
 }
 h1 {
     display: flex;
@@ -45,7 +50,7 @@ main {
     padding: 10px;
 }
 .sidebar-img {
-    width: 100px;
+    width: 200px;
 }
 .content {
     flex: 1;
