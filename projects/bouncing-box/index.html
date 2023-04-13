@@ -72,13 +72,17 @@
 			*/
 			function update() { 
 				/*Increase the value of positionX by 10*/
-				positionX = positionX + speed;
+				positionX = speed + positionX;
 				moveBoxTo(positionX);
-				
-			};
-			if (conditionIsTrue) {
-				
+				if (positionX > boardWidth){
+					speed = -speed;
 			}
+			if (positionX < 0){
+				speed *= -1;
+			}
+			};
+			
+		
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
@@ -89,10 +93,11 @@
 				speed = speed + 3;
 			points = points + 1;
 				changeBoxText(points);
+				speed = -speed;
 				
 			};
+			/*TODO 6*/
 			
-				
 			
 		})();
 	</script>
